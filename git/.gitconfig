@@ -1,0 +1,24 @@
+[user]
+	email = user@domain.com
+	name = firstname lastname
+[alias]
+	st = status --ignore-submodules
+	ci = commit
+	br = branch -vv
+	rmt = remote -v
+	co = checkout
+	df = difftool -t meld
+	wc = whatchanged
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	tr = rev-parse --symbolic-full-name HEAD@{u}
+	pl = pull origin main --prune
+	rm-untracked = !git ls-untracked | xargs -n 1 rm -fr
+	ls-untracked = !git ls-files --others --exclude-standard
+[init]
+	defaultBranch = main
+	templateDir = /home/tlund/.githooks/templates
+[pull]
+	ff = only
+	rebase = true
+[rebase]
+	autoStash = true
