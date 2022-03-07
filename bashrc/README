@@ -1,0 +1,19 @@
+This is a standard bashrc from Ubuntu 20.04 + some modifications
+
+git_parsebranch is a functionality to show name of current branch,
+if the current directory is a git repository. The output will be
+shown in the terminal prompt
+
+Nver prompt is an extended prompt. It will show return status of
+last executed command. Username will be in green if true, red if
+false. It will also check for git repository by calling function
+
+Fzf options. It requires fzf and bat to be installed.
+Please install fzf from repository and not via apt, as apt will
+not run install hooks.
+
+bat is required and can be installed by apt. Please be aware, if
+installing on ubuntu, bat comman is installed as batcat. If bat
+command is preferred, make a symbolic link.The fzf part assumes
+bat command is available
+Link is done by: sudo ln -s /usr/bin/batcat /usr/bin/bat
