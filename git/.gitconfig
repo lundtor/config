@@ -16,7 +16,6 @@
 	ls-untracked = !git ls-files --others --exclude-standard
 [init]
 	defaultBranch = main
-	templateDir = /home/tlund/.githooks/templates
 [pull]
 	ff = only
 	rebase = true
