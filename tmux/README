@@ -1,3 +1,4 @@
 This .tmux.conf is to be placed in ~
 
 It requires tmux3.20a or newer to function
+Also do remember to apt install xclip
