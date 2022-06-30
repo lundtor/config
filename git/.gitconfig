@@ -12,6 +12,7 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	tr = rev-parse --symbolic-full-name HEAD@{u}
 	pl = pull origin main --prune
+        nuke = !git clean -xfdf && git submodule foreach "git clean -fxdf"
 	rm-untracked = !git ls-untracked | xargs -n 1 rm -fr
 	ls-untracked = !git ls-files --others --exclude-standard
 [init]
