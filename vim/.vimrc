@@ -1,16 +1,21 @@
 set nocompatible
 filetype on
 
-syntax on
+syntax enable
 set number
 set cursorline
+set smarttab
 set tabstop=4
+set shiftwidth=4
 set expandtab
 set nowrap
 set incsearch
 set showmatch
 set hlsearch
 set wildmenu
+set ignorecase
+set smartcase
+
 
 
 
@@ -33,4 +38,17 @@ set laststatus=2
 
 " }}}
 
+
+try
+    colorscheme desert
+catch
+endtry
+
+set background=dark
+
+set encoding=utf8
+
+set nobackup
+set nowb
+set noswapfile
 
